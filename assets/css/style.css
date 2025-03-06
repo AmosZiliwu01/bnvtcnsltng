@@ -62,9 +62,9 @@
         background: #7d918e;
     }
     .footer {
-        background-color:rgb(0, 183, 255);
+        background-color: rgb(0, 183, 255);
         color: #fff;
-        padding: 40px 0;
+        padding: 60px 0 30px 0;
     }
     .footer a {
         color: #fff;
@@ -484,5 +484,136 @@
         .about-feature p.small {
             font-size: 0.7rem;
             line-height: 1.2;
+        }
+    }
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .footer-logo span {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .footer h5 {
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .footer h5::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50px;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .footer ul li {
+        margin-bottom: 12px;
+    }
+
+    .footer ul li a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer ul li a:hover {
+        color: #fff;
+        transform: translateX(5px);
+    }
+
+    .footer ul li a i {
+        margin-right: 8px;
+        font-size: 0.8rem;
+    }
+
+    .footer hr {
+        border-color: rgba(255, 255, 255, 0.1);
+        margin: 30px 0;
+    }
+
+    .footer .copyright {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .mapouter {
+        position: relative;
+        text-align: right;
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+    }
+
+    .gmap_canvas {
+        overflow: hidden;
+        background: none!important;
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .gmap_iframe {
+        width: 100%!important;
+        height: 200px!important;
+    }
+
+    .footer .social-links {
+        margin-top: 15px;
+    }
+
+    .footer .social-links a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        margin-right: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .footer .social-links a:hover {
+        background: #fff;
+        color: rgb(0, 183, 255);
+        transform: translateY(-3px);
+    }
+
+    @media (max-width: 768px) {
+        .footer {
+            padding: 40px 0 20px 0;
+        }
+        
+        .footer h5 {
+            margin-top: 20px;
+        }
+        
+        .mapouter {
+            margin: 10px auto;
         }
     }
