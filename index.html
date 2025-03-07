@@ -30,10 +30,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#home" onclick="document.getElementById('navbarNav').classList.remove('show')">Home</a>
+                            <a class="nav-link active" href="index.html" onclick="document.getElementById('navbarNav').classList.remove('show')">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about" onclick="document.getElementById('navbarNav').classList.remove('show')">About</a>
+                            <a class="nav-link" href="about.html" onclick="document.getElementById('navbarNav').classList.remove('show')">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#services" onclick="document.getElementById('navbarNav').classList.remove('show')">Services</a>
@@ -157,17 +157,22 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Learn More Section -->
+                    <div class="text-center mt-4">
+                        <a href="#learn-more" class="btn btn-success">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
     <!-- Logo section -->
-    <section class="logo-section" id="logo">
+    <section class="logo-section" id="logo" style="margin-top: 2%;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10 col-md-12 col-12">
                     <div class="logo-section">
+                        <h2 class="text-center mb-5 display-6 fw-bold" style="color: #0A5640;">Our Client</h2>
                         <div class="logo-container">
                         <!-- Logo asli -->
                         <img src="assets/images/logo.png" alt="Logo 1">
@@ -188,14 +193,13 @@
     </section>
 
     <!-- Section Contact -->
-    <section class="contact-section p-3" id="contact">
+    <section class="contact-section p-3" id="contact" style="margin-top: 10%;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10 col-md-12 col-12">
-                    <h2 class="text-center mb-5 display-6 fw-bold" style="color: #0A5640;">Hubungi Kami</h2>
                     <div class="row">
                         <div class="col-md-6 mb-4 mb-md-0">
-                            <div class="contact-info" data-aos="fade-right" data-aos-duration="1500">
+                            <div class="contact-info" data-aos="fade-right" data-aos-duration="1500" style="margin-top: 120px; margin-bottom: 50px;">
                                 <h3 class="h4 mb-4">Informasi Kontak</h3>
                                 <div class="d-flex align-items-center mb-3">
                                     <i class="fas fa-map-marker-alt me-3" style="color: #0A5640; font-size: 1.5rem;"></i>
@@ -219,6 +223,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="contact-form" data-aos="fade-left" data-aos-duration="1500">
+                            <h2 class="text-center mb-5 display-10 fw-bold" style="color: #0A5640;">Hubungi Kami</h2>
                                 <form>
                                     <div class="mb-3">
                                         <input type="text" class="form-control" placeholder="Nama Lengkap">
@@ -232,7 +237,7 @@
                                     <div class="mb-3">
                                         <textarea class="form-control" rows="5" placeholder="Pesan"></textarea>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                                    <button type="submit" class="btn btn-success">Kirim Pesan</button>
                                 </form>
                             </div>
                         </div>
@@ -327,6 +332,15 @@
     <script src="assets/js/script.js"></script>
     <script>
         AOS.init();
-      </script>
+
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-section');
+            if (window.scrollY > 50) { // Ganti 50 dengan nilai yang sesuai
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
