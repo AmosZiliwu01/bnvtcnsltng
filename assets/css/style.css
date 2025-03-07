@@ -729,6 +729,10 @@
             background-color: rgb(255, 241, 220); /* Background color */
             z-index: 0; /* Ensure it is behind the content */
         }
+
+        .contact-section {
+            margin-top: -200px;
+        }
     }
 
     .contact-section > div {
